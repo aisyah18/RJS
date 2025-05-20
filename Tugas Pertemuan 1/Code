@@ -1,1 +1,72 @@
-a
+function App() {
+  return (
+    <>
+      <div className="container">
+        {/* Header */}
+        <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div className="col-md-3 mb-2 mb-md-0">
+            <a href="/" className="d-inline-flex align-items-center link-body-emphasis text-decoration-none">
+              <i className="fa-solid fa-bowl-food fa-2xl" style={{ color: "#FFD43B" }}></i>
+              <span className="ms-2 fs-4">FOODSTORE</span>
+            </a>
+          </div>
+
+          <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" className="nav-link px-2">Home</a></li>
+            <li><a href="#" className="nav-link px-2">Order</a></li>
+            <li><a href="#" className="nav-link px-2">Team</a></li>
+            <li><a href="#" className="nav-link px-2">Contact</a></li>
+          </ul>
+
+          <div className="col-md-3 text-end">
+            <button type="button" className="btn btn-outline-primary me-2">Login</button>
+            <button type="button" className="btn btn-primary">Register</button>
+          </div>
+        </header>
+
+        {/* Hero Section */}
+        <section className="p-5 text-center bg-light rounded-3 shadow">
+          <div className="container py-5">
+            <h1 className="display-4 fw-bold">Enjoy Your Favorite Meals</h1>
+            <p className="lead mb-4">
+              Fresh, fast, and delicious food delivered right to your doorstep.
+            </p>
+            <a href="#" className="btn btn-primary btn-lg px-4 me-sm-3">Order Now</a>
+            <a href="#" className="btn btn-outline-secondary btn-lg px-4">Browse Menu</a>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-5">
+          <div className="container">
+            <div className="row text-center g-4">
+              <div className="col-md-4">
+                <div className="bg-white border rounded p-4 shadow-sm h-100">
+                  <i className="fa-solid fa-mobile-screen fa-2x mb-3 text-warning"></i>
+                  <h4 className="fw-bold">Easy Ordering</h4>
+                  <p>Order your meals easily through our user-friendly platform anytime.</p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="bg-white border rounded p-4 shadow-sm h-100">
+                  <i className="fa-solid fa-utensils fa-2x mb-3 text-danger"></i>
+                  <h4 className="fw-bold">Delicious Dishes</h4>
+                  <p>Wide variety of delicious and freshly made dishes just for you.</p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="bg-white border rounded p-4 shadow-sm h-100">
+                  <i className="fa-solid fa-truck-fast fa-2x mb-3 text-success"></i>
+                  <h4 className="fw-bold">Fast Delivery</h4>
+                  <p>We deliver hot and fresh food quickly, so you never have to wait long.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+}
+
+export default App;
